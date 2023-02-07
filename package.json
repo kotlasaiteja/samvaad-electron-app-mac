@@ -1,6 +1,6 @@
 {
   "name": "samvaad-meet-electron",
-  "version": "3.1.1",
+  "version": "2.1.0",
   "description": "Electron application for Samvaad Pro",
   "main": "./build/main.js",
   "productName": "Samvaad Pro",
@@ -10,8 +10,8 @@
     "lint": "eslint . && flow",
     "postinstall": "patch-package && electron-builder install-app-deps",
     "watch": "webpack --config ./webpack.renderer.js --mode development --watch --watch-options-poll=1000",
-    "build": "electron-builder build --win --publish never",
-    "deploy": "electron-builder build --win --publish always"
+    "build": "electron-builder build --mac --publish never",
+    "deploy": "electron-builder build --mac --publish always"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -89,7 +89,7 @@
       ]
     },
     "win": {
-      "artifactName": "samvaad-pro-3.1.1.${ext}",
+      "artifactName": "samvaad-pro-2.1.0.${ext}",
       "target": [
         {
           "arch": [
@@ -118,7 +118,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kotlasaiteja/samvaad-electron-app.git"
+    "url": "https://github.com/kotlasaiteja/samvaad-electron-app-mac.git"
   },
   "keywords": [
     "jingle",
