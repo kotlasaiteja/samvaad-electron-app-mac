@@ -47,7 +47,7 @@ class App extends Component<*> {
         // send notification to main process
         window.jitsiNodeAPI.ipc.send('renderer-ready');
 
-        this._listenOnProtocolMessages('', 'https://dev.samvaad.pro/aar/5d90V-1675753716892_eyJzdGFydFdpdGhWaWRlb011dGVkIjpmYWxzZSwic3RhcnRXaXRoQXVkaW9NdXRlZCI6dHJ1ZX0?V=1675753740897')
+        // this._listenOnProtocolMessages('', 'https://dev.samvaad.pro/aar/5d90V-1675753716892_eyJzdGFydFdpdGhWaWRlb011dGVkIjpmYWxzZSwic3RhcnRXaXRoQXVkaW9NdXRlZCI6dHJ1ZX0?V=1675753740897')
 
     }
 
@@ -78,8 +78,8 @@ class App extends Component<*> {
      */
     _listenOnProtocolMessages(event, inputURL: string) {
 
-        let mediaData = inputURL.includes('_') ? inputURL.split('_')[1].split('?')[0] : inputURL;
-        console.log(atob(mediaData), 'mediaData');
+        // let mediaData = inputURL.includes('_') ? inputURL.split('_')[1].split('?')[0] : inputURL;
+        // console.log(atob(mediaData), 'mediaData');
 
         this.props.dispatch({
             type: SET_JOINED_USING_MEETING_LINK,

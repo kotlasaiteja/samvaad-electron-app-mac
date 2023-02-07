@@ -209,8 +209,8 @@ class Welcome extends Component<Props, State> {
                 {/* <Page navigation = { <Navbar /> }> */}
                 <AtlasKitThemeProvider mode='light'>
                     <Wrapper>
-                        {/* {this.state.isLoading ? this.loadingIndicator() : (_meetingUrl && _isJoinedUsingMeetLink || this.state.hasJoiningLink) ? this._renderHeader() : this.landingPage()} */}
-                        {this._renderHeader()}
+                        {this.state.isLoading ? this.loadingIndicator() : (_meetingUrl && _isJoinedUsingMeetLink || this.state.hasJoiningLink) ? this._renderHeader() : this.landingPage()}
+                        {/* {this._renderHeader()} */}
                         {/* {this._renderBody()} */}
                         {/* <Onboarding section='welcome-page' /> */}
                     </Wrapper>
