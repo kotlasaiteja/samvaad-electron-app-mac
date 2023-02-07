@@ -1,0 +1,26 @@
+.bg{
+    background-color: #1B2638 !important;
+    background: #1B2638 !important;
+    color: #ffffff !important;
+    margin-bottom: 20px;
+    line-height: 0 !important;
+    height: 3.25rem !important;
+}
+
+.pd1{
+    padding: 1rem !important;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+}
+
+.ce{
+    position: absolute;
+    width: max-content;
+    font-size: 24px;
+    transform: translate(-35%, 0%);
+}
